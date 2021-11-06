@@ -1,3 +1,4 @@
+import 'package:bookzy/Views/Home/chapter1.view.dart';
 import 'package:flutter/material.dart';
 
 class Mayor extends StatelessWidget {
@@ -18,10 +19,10 @@ class Mayor extends StatelessWidget {
               ),
               Container(
                 height: 200,
-                width: 170,
+                width: 200,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  image: const DecorationImage(image: AssetImage('images/myst3.png'))
+                  image: const DecorationImage(image: AssetImage('images/myst3.png',))
                 ),
               ),
               const Text("The Breaking Point",style:TextStyle(
@@ -66,10 +67,19 @@ class Mayor extends StatelessWidget {
               ),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(children: [
-                    Text('Chapter 1:'),
-                    Text('Lorem ipsum lor')
-                  ],),
+                  GestureDetector(
+                    onTap: (){
+
+    Navigator.push(context,
+    MaterialPageRoute(builder: (context) => Chapter1()));
+
+
+    },
+                    child: Row(children: [
+                      Text('Chapter 1:'),
+                      Text('Lorem ipsum lor')
+                    ],),
+                  ),
                   Icon(Icons.arrow_downward,size: 18,),
 
 

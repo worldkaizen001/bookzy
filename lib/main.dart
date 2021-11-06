@@ -1,4 +1,4 @@
-import 'package:bookzy/Views/homepage.view.dart';
+import 'package:bookzy/Views/Home/homepage.view.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 

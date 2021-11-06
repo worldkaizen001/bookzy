@@ -1,4 +1,4 @@
-import 'package:bookzy/Views/next.view.dart';
+import 'package:bookzy/Views/Home/next.view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:bookzy/Helpers/constants.dart';
 import 'package:flutter/material.dart';

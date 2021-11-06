@@ -1,8 +1,8 @@
-import 'package:bookzy/Views/mystery.view.dart';
+import 'package:bookzy/Views/Home/mystery.view.dart';
 import 'package:bookzy/Widgets/first.dart';
 import 'package:flutter/material.dart';
 import 'package:bookzy/Helpers/constants.dart';
-import 'package:bookzy/brain_calculate.dart';
+// import 'package:percent_indicator/percent_indicator.dart'
 
 
 class Homepage extends StatefulWidget {
@@ -95,6 +95,7 @@ class _HomepageState extends State<Homepage> {
                   ],
                 ),
               ),
+
 
             ],
           ),

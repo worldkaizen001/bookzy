@@ -38,6 +38,8 @@ dependencies:
   provider: ^5.0.0
   gap: ^2.0.0
   fancy_bottom_bar: ^0.0.1
+  percent_indicator: ^3.4.0
+
 
 dev_dependencies:
   flutter_test:
