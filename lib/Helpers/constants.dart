@@ -10,6 +10,32 @@ const kTextSize30 = TextStyle(
   fontWeight: FontWeight.w600,
   fontFamily:  'SourceSansPro',
 );
+const kTextSize28 = TextStyle(
+  fontSize: 28,
+  color:  Color(0xFf264B4B),
+  fontWeight: FontWeight.w600,
+  fontFamily:  'SourceSansPro',
+);
+
+const kTextSize25 = TextStyle(
+fontSize: 25,
+fontWeight: FontWeight.w600,
+color: Color(0xff0F8B8B),
+fontFamily:  'SourceSansPro',
+);
+
+const kTextSize22 = TextStyle(
+fontSize: 22,
+fontWeight: FontWeight.w600,
+color: Color(0xff0F8B8B),
+fontFamily:  'SourceSansPro',
+);
+
+const kTextSize15 = TextStyle(
+color: Colors.white,fontWeight: FontWeight.w500,
+fontSize: 15,
+
+);
 
 const kTextSize16 = TextStyle(
 fontSize: 15,
@@ -29,3 +55,4 @@ Widget browny(image,){
     ),
   );
 }
+

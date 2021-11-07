@@ -1,3 +1,4 @@
+import 'package:bookzy/Views/Explore/explore.view.dart';
 import 'package:bookzy/Views/login/createaccount.view.dart';
 import 'package:flutter/material.dart';
 import 'package:bookzy/Helpers/constants.dart';
@@ -75,10 +76,16 @@ class Recommended extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          height: 170,
-                          width: 110,
-                          child: Image.asset('images/explore1.png',fit: BoxFit.cover,),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => Explore()));
+                          },
+                          child: Container(
+                            height: 170,
+                            width: 110,
+                            child: Image.asset('images/explore1.png',fit: BoxFit.cover,),
+                          ),
                         ),
                         Container(
                           height: 170,

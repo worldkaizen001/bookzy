@@ -36,16 +36,16 @@ class _HomepageState extends State<Homepage> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text('Hello Jackson',
+              const Text('Hello Jackson',
               style: kTextSize16),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text("Today's Booklist",style: kTextSize30,),
-              SizedBox(
+              const Text("Today's Booklist",style: kTextSize30,),
+              const SizedBox(
                 height: 5,
               ),
               SizedBox(
@@ -61,10 +61,11 @@ class _HomepageState extends State<Homepage> {
                                   MaterialPageRoute(builder: (context) => Screen2()));
 
                             },
-                            child: FirstWidget()),
-                        FirstWidget(),
-                        FirstWidget(),
-                        FirstWidget(),
+                            child: Slide (context, "home1", "Mystery Murder",),),
+                         Slide (context, "home4", "Romance",),
+                        Slide (context, "home3", "Fiction",),
+
+                        Slide (context, "home4", "Crimes",),
 
                       ],
                     ),
@@ -84,11 +85,12 @@ class _HomepageState extends State<Homepage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     Row(
-                      children: const [
-                        FirstWidget(),
-                        FirstWidget(),
-                        FirstWidget(),
-                        FirstWidget(),
+                      children:  [
+                      Slide (context, "home4", "Best Seller",),
+                    Slide (context, "home1", 'Crime Books',),
+                    Slide (context, "home4", "Motivation",),
+
+                    Slide (context, "home3", "Wars",),
 
                       ],
                     ),
