@@ -18,7 +18,13 @@ class _Chapter1State extends State<Chapter1> {
         child: SingleChildScrollView(
           child: Column(
             children:   [
-              const Text('Chapter 1'),
+              Row(
+                children: [
+                  IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_back,color: Color(0xff2B9898),size: 28,)),
+                  const Text('Chapter 1'),
+
+                ],
+              ),
               const SizedBox(
                 height: 10,
               ),

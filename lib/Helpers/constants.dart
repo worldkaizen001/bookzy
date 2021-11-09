@@ -31,7 +31,7 @@ color: Color(0xff0F8B8B),
 fontFamily:  'SourceSansPro',
 );
 
-const kTextSizeBookzy = TextStyle(fontSize: 29,color: Color(0xff264B4B),fontWeight: FontWeight.w600,fontFamily:  'SourceSansPro', );
+const kTextSizeBookzy = TextStyle(fontSize: 30,color: Color(0xff264B4B),fontWeight: FontWeight.w500,fontFamily:  'SourceSansPro', );
 
 const kTextSize15 = TextStyle(
 color: Colors.white,fontWeight: FontWeight.w500,
@@ -56,5 +56,7 @@ Widget browny(image,){
         image:  DecorationImage(image: AssetImage('images/$image.png'),fit: BoxFit.cover)
     ),
   );
+
+
 }
 

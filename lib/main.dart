@@ -1,3 +1,4 @@
+import 'package:bookzy/Navigation/navigation.dart';
 import 'package:bookzy/Views/Home/homepage.view.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: HexColor('#f3f1f1'),
 
       ),
-      home: const Homepage(),
+      home: const Navigation(),
     );
   }
 }

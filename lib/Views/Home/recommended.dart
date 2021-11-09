@@ -21,13 +21,20 @@ class Recommended extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 25),
+            padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 25),
             child: Column(
               children: [
                 Row(
-                  children: [
-                    Icon(Icons.cancel),
-                    Text('Recommended Books',style: kTextSize16,)
+                  children:  [
+                    IconButton(onPressed: (){}, icon: const Icon(Icons.clear,color: Color(0xff2B9898),size: 20,)),
+                    SizedBox(
+                      width: 35,
+                    ),
+                    Text('Recommended Books',style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff0F8B8B)
+                    ),),
                   ],
                 ),
                 SizedBox(height: 30,),

@@ -29,13 +29,14 @@ int eighty = 80;
 
         body: SingleChildScrollView (
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_back,size: 20, color: Color(0xff2B9898),)),
+                    IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_back,size: 28, color: Color(0xff2B9898),)),
+                    SizedBox(width: 50),
 
                     const Text("Murder Mystery",style:TextStyle(
                       fontSize: 25,
@@ -46,12 +47,12 @@ int eighty = 80;
                   ],
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text('20 Books'),
+                  children:  const [
+                    Text('40 Books',style: TextStyle(color: Color(0xff0F8B8B)),),
                     SizedBox(
                       width: 15,
                     ),
-                    Text('200 Bookzy'),
+                    Text('200 Bookzy',style: TextStyle(color: Color(0xff0F8B8B)),),
                   ],
                 ),
                 SizedBox(height: 10),

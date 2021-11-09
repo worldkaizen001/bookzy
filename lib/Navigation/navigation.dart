@@ -1,7 +1,8 @@
+import 'package:bookzy/Views/Explore/explore.view.dart';
+import 'package:bookzy/Views/Home/homepage.view.dart';
+import 'package:bookzy/Views/Library/library.view.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-
-
 
 class Navigation extends StatefulWidget {
   const Navigation({Key? key}) : super(key: key);
@@ -11,10 +12,11 @@ class Navigation extends StatefulWidget {
 }
 
 class _NavigationState extends State<Navigation> {
-
   int _currentIndex = 0;
   final children = [
-   ///put in your 3 pages that would be in the navigation
+    const Homepage(),
+    const Explore(),
+    const Library(),
   ];
 
   void onTapped(int index) {
@@ -22,7 +24,6 @@ class _NavigationState extends State<Navigation> {
       _currentIndex = index;
     });
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -35,16 +36,24 @@ class _NavigationState extends State<Navigation> {
         iconSize: 22,
         onTap: onTapped,
         selectedItemColor: HexColor('#0F8B8B'),
-        backgroundColor: Colors.black,
+        unselectedItemColor: HexColor("#141414"),
+        backgroundColor: Colors.white,
         items: [
-          BottomNavigationBarItem(icon: const Icon(Icons.home),label: 'Home' ,backgroundColor: HexColor('#2E4350')
-          ),
-          const BottomNavigationBarItem(icon: Icon(Icons.search),
+          BottomNavigationBarItem(
+              icon: const Icon(Icons.home),
+              label: 'Home',
+              backgroundColor: HexColor('#f3f3f3')),
+           BottomNavigationBarItem(
+            icon: Icon(Icons.search),
             label: 'Search',
-          ),
-          const BottomNavigationBarItem(icon: Icon(Icons.settings),
-              label: 'Settings'
-          ),
+    backgroundColor: HexColor('#f3f3f3')),
+
+
+
+           BottomNavigationBarItem(
+              icon: Icon(Icons.bookmark_outline), label: 'My Library',backgroundColor: HexColor('#f3f3f3')),
+
+
         ],
       ),
     );

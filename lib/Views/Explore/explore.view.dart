@@ -1,3 +1,5 @@
+import 'package:bookzy/Views/Home/homepageAudio.view.dart';
+import 'package:bookzy/Views/Library/library.view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:bookzy/Helpers/constants.dart';
@@ -28,31 +30,31 @@ class Explore extends StatelessWidget {
                         decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(12),
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                   color: Color(0xffECECEE)
 
                               ),
                             ),
                             enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12),
-                                borderSide: BorderSide(color: Color(0xffECECEE))
+                                borderSide: const BorderSide(color: Color(0xffECECEE))
                             ),
 
                             filled: true,
-                            fillColor: Color(0xffECECEE),
+                            fillColor: const Color(0xffECECEE),
                             hintText: 'Search Books or Genre',
-                            hintStyle: TextStyle(color: Color(0xff8C8282))
+                            hintStyle: const TextStyle(color: Color(0xff8C8282))
 
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 60,
                       width: 60,
-                      child: Card(
+                      child: const  Card(
                         color: Color(0xff0F8B8B),
                         child: Center(child: Icon(Icons.search, color: Color(0xffEBEBED),)),
                       ),
@@ -104,44 +106,48 @@ class Explore extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 18,),
-                Text('Favourite Books',style: kTextSize22),
-                SizedBox(height: 18,),
-                SizedBox(
-                  height: 170,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                const SizedBox(height: 18,),
+                const Text('Favourite Books',style: kTextSize22),
+                const SizedBox(height: 18,),
+                GestureDetector(
+                  onTap: (){
+                    },
+                  child: SizedBox(
+                    height: 170,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                        children: [
-                          Container(
-                            height: 170,
-                            width: 110,
-                            child: Image.asset('images/explore5.png',fit: BoxFit.cover,),
-                          ),
-                          SizedBox(width: 13,),
-                          Container(
-                            height: 170,
-                            width: 110,
-                            child: Image.asset('images/explore1.png',fit: BoxFit.cover,),
-                          ),
-                          SizedBox(width: 13,),
-                          Container(
-                            height: 170,
-                            width: 110,
-                            child: Image.asset('images/explore1.png',fit: BoxFit.cover,),
-                          ),
-                          const SizedBox(width: 13,),
-                          Container(
-                            height: 170,
-                            width: 110,
-                            child: Image.asset('images/explore4.png',fit: BoxFit.cover,),
-                          ),
-                        ],
-                      ),
-                    ],
+                          children: [
+                            Container(
+                              height: 170,
+                              width: 110,
+                              child: Image.asset('images/explore5.png',fit: BoxFit.cover,),
+                            ),
+                            SizedBox(width: 13,),
+                            Container(
+                              height: 170,
+                              width: 110,
+                              child: Image.asset('images/explore1.png',fit: BoxFit.cover,),
+                            ),
+                            SizedBox(width: 13,),
+                            Container(
+                              height: 170,
+                              width: 110,
+                              child: Image.asset('images/explore1.png',fit: BoxFit.cover,),
+                            ),
+                            const SizedBox(width: 13,),
+                            Container(
+                              height: 170,
+                              width: 110,
+                              child: Image.asset('images/explore4.png',fit: BoxFit.cover,),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(height: 18,),

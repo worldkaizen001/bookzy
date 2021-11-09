@@ -1,10 +1,11 @@
+import 'package:bookzy/Views/Onboarding/dart/onboarding1.view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:bookzy/Widgets/first.dart';
 import 'package:bookzy/Helpers/constants.dart';
 
-class Explore extends StatelessWidget {
-  const Explore({Key? key}) : super(key: key);
+class Library extends StatelessWidget {
+  const Library({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class Explore extends StatelessWidget {
               children: [
                 const Text("Library",style: kTextSize28,),
                 const SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 SizedBox(
                   width: 230,
@@ -46,11 +47,11 @@ class Explore extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 const Text("Favourite Booklist",style: kTextSize25 ),
                 const SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 SizedBox(
                   height: 280,
@@ -70,25 +71,31 @@ class Explore extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 18,),
+                const SizedBox(height: 5,),
                 const Text('My Booklist',style: kTextSize22),
-                const SizedBox(height: 18,),
-                SizedBox(
-                  height: 280,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Row(
-                        children:  [
-                          Slide (context, "home4", "Best Seller",),
-                          Slide (context, "home1", 'Crime Books',),
-                          Slide (context, "home4", "Motivation",),
+                const SizedBox(height: 5,),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Onboarding1()));
+                  },
+                  child: SizedBox(
+                    height: 280,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Row(
+                          children:  [
+                            Slide (context, "home4", "Best Seller",),
+                            Slide (context, "home1", 'Crime Books',),
+                            Slide (context, "home4", "Motivation",),
 
-                          Slide (context, "home3", "Wars",),
+                            Slide (context, "home3", "Wars",),
 
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
 
