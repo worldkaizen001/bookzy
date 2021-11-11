@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314562064095",
+    "project_id": "flutter-bookzy",
+    "storage_bucket": "flutter-bookzy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314562064095:android:36fca259051e61f113c36a",
+        "android_client_info": {
+          "package_name": "com.kaizen.bookzy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314562064095-06vc2fp82331n4pcdqr5op5a8suger2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxOBAFdkSB9YdlOEATptdDFgbkjUVQD4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314562064095-06vc2fp82331n4pcdqr5op5a8suger2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

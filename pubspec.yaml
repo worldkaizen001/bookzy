@@ -39,6 +39,9 @@ dependencies:
   gap: ^2.0.0
   fancy_bottom_bar: ^0.0.1
   percent_indicator: ^3.4.0
+  cloud_firestore: ^3.1.0
+  firebase_auth: ^3.2.0
+  firebase_core: ^1.6.0
 
 
 dev_dependencies:
